@@ -295,7 +295,8 @@ function (_Component) {
     value: function render() {
       return _core.Bread.parse("div", null, _core.Bread.parse("button", {
         onclick: this.click,
-        style: this.style
+        style: this.style,
+        "class": "buttong"
       }, "klik"));
     }
   }, {
@@ -312,7 +313,6 @@ function (_Component) {
     key: "randomize",
     value: function randomize() {
       this.style = {
-        position: 'absolute',
         left: "".concat(Math.floor(Math.random() * window.innerWidth), "px"),
         top: "".concat(Math.floor(Math.random() * window.innerHeight), "px")
       };
