@@ -11,7 +11,7 @@ class Example extends Component {
         return (
             <div>
                 <input type="text" onkeypress={this.keypress}></input>
-                <h1>{this.value}</h1>
+                <h1>{String(this.value)}</h1>
             </div>
         );
     }
