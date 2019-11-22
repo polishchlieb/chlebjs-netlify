@@ -1,24 +1,32 @@
 import { Bread, Component } from '@chlebjs/core';
-import { evaluate } from 'mathjs';
 
 class Example extends Component {
     data = {
-        value: '',
-        scope: {}
+        style: {}
     };
 
     render() {
         return (
             <div>
-                <input type="text" onkeypress={this.keypress}></input>
-                <h1>{String(this.value)}</h1>
+                <button onclick={this.click} style={this.style}>klik</button>
             </div>
         );
     }
 
-    keypress(e) {
-        if (e.keyCode === 13)
-            this.value = evaluate(e.target.value, this.scope);
+    click() {
+        this.randomize();
+    }
+
+    ready() {
+        this.randomize();
+    }
+
+    randomize() {
+        this.style = {
+            position: 'absolute',
+            left: `${Math.floor(Math.random() * window.innerWidth)}px`,
+            top: `${Math.floor(Math.random() * window.innerHeight)}px`
+        };
     }
 }
 
