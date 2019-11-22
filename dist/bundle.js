@@ -32,7 +32,7 @@ function () {
 
     return {
       type: type,
-      attributes: attributes || {},
+      attributes: attributes,
       children: children.flat(Infinity) || []
     };
   };
@@ -111,8 +111,7 @@ var diff = function diff($node, vNode, $parent, component) {
   if ($node) {
     var type = vNode.type,
         attributes = vNode.attributes;
-    if (attributes["static"]) return $node;
-    if (type == 'input' && attributes.model) component[attributes.model] = $node.value;
+    if (attributes && attributes["static"]) return $node;
 
     if (typeof vNode === 'string') {
       $node.nodeValue = vNode;

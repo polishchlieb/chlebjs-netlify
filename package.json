@@ -5,7 +5,7 @@
   "main": "dist/index.html",
   "dependencies": {},
   "devDependencies": {
-    "@chlebjs/core": "^2.0.2",
+    "@chlebjs/core": "^2.0.3",
     "mathjs": "^6.2.5"
   },
   "scripts": {
