@@ -8,7 +8,7 @@ class Example extends Component {
     render() {
         return (
             <div>
-                <button onclick={this.click} style={this.style}>klik</button>
+                <button onclick={this.click} style={this.style} class="buttong">klik</button>
             </div>
         );
     }
@@ -23,7 +23,6 @@ class Example extends Component {
 
     randomize() {
         this.style = {
-            position: 'absolute',
             left: `${Math.floor(Math.random() * window.innerWidth)}px`,
             top: `${Math.floor(Math.random() * window.innerHeight)}px`
         };
