@@ -1,0 +1,25 @@
+{
+  "name": "netlifytests",
+  "version": "1.0.0",
+  "description": "example netlify project for chlebjs",
+  "main": "dist/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "@chlebjs/core": "^2.0.0",
+    "mathjs": "^6.2.5"
+  },
+  "scripts": {
+    "build": "chlebjs build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polishchlieb/chlebjs-netlify.git"
+  },
+  "keywords": [],
+  "author": "chlebek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polishchlieb/chlebjs-netlify/issues"
+  },
+  "homepage": "https://github.com/polishchlieb/chlebjs-netlify#readme"
+}
