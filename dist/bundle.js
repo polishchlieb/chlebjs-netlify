@@ -313,8 +313,8 @@ function (_Component) {
     key: "randomize",
     value: function randomize() {
       this.style = {
-        left: "".concat(Math.floor(Math.random() * window.innerWidth), "px"),
-        top: "".concat(Math.floor(Math.random() * window.innerHeight), "px")
+        left: "".concat(Math.floor(Math.random() * (window.innerWidth - 300)), "px"),
+        top: "".concat(Math.floor(Math.random() * (window.innerHeight - 100)), "px")
       };
     }
   }]);

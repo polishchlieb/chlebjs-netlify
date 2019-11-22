@@ -23,8 +23,8 @@ class Example extends Component {
 
     randomize() {
         this.style = {
-            left: `${Math.floor(Math.random() * window.innerWidth)}px`,
-            top: `${Math.floor(Math.random() * window.innerHeight)}px`
+            left: `${Math.floor(Math.random() * (window.innerWidth - 300))}px`,
+            top: `${Math.floor(Math.random() * (window.innerHeight - 100))}px`
         };
     }
 }
