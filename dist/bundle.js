@@ -32,8 +32,8 @@ function () {
 
     return {
       type: type,
-      attributes: attributes,
-      children: children.flat(Infinity)
+      attributes: attributes || {},
+      children: children.flat(Infinity) || []
     };
   };
 
@@ -111,7 +111,7 @@ var diff = function diff($node, vNode, $parent, component) {
   if ($node) {
     var type = vNode.type,
         attributes = vNode.attributes;
-    if (attributes && attributes["static"]) return $node;
+    if (attributes["static"]) return $node;
     if (type == 'input' && attributes.model) component[attributes.model] = $node.value;
 
     if (typeof vNode === 'string') {
@@ -171,18 +171,18 @@ exports.Component = Component_1["default"];
 
 exports.__esModule = true;
 
-var diff_js_1 = require("./diff.js");
+var diff_1 = require("./diff");
 
 var renderComponent = function renderComponent(component, attributes) {
   var rendered = component.render(attributes);
   /* component.base = */
 
-  diff_js_1["default"](component.base, rendered, null, component);
+  diff_1["default"](component.base, rendered, null, component);
 };
 
 exports["default"] = renderComponent;
 
-},{"./diff.js":3}],6:[function(require,module,exports){
+},{"./diff":3}],6:[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -85699,7 +85699,7 @@ function (_Component) {
       return _core.Bread.parse("div", null, _core.Bread.parse("input", {
         type: "text",
         onkeypress: this.keypress
-      }), _core.Bread.parse("h1", null, this.value));
+      }), _core.Bread.parse("h1", null, String(this.value)));
     }
   }, {
     key: "keypress",
