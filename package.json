@@ -5,11 +5,14 @@
   "main": "dist/index.html",
   "dependencies": {},
   "devDependencies": {
-    "@chlebjs/core": "^2.0.3",
-    "mathjs": "^6.2.5"
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "chleb": "^3.0.0",
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "build": "chlebjs build"
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",

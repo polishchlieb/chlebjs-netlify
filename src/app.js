@@ -1,4 +1,4 @@
-import { Bread, Component } from '@chlebjs/core';
+import { Bread, Component } from 'chleb';
 
 class Example extends Component {
     data = {
@@ -8,17 +8,9 @@ class Example extends Component {
     render() {
         return (
             <div>
-                <button onclick={this.click} style={this.style} class="buttong">klik</button>
+                <button onclick={this.randomize} style={this.style} class="buttong">klik</button>
             </div>
         );
-    }
-
-    click() {
-        this.randomize();
-    }
-
-    ready() {
-        this.randomize();
     }
 
     randomize() {
@@ -27,6 +19,8 @@ class Example extends Component {
             top: `${Math.floor(Math.random() * (window.innerHeight - 100))}px`
         };
     }
+
+    ready = this.randomize;
 }
 
 const app = new Bread({ app: Example });
