@@ -4,7 +4,7 @@
             "loose": true
         }],
         ["@babel/plugin-transform-react-jsx", {
-            "pragma": "Bread.parse",
+            "pragma": "Pixel.parse",
             "throwIfNamespace": false
         }]
     ]

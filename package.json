@@ -1,28 +1,29 @@
 {
-  "name": "netlifytests",
-  "version": "1.0.0",
-  "description": "example netlify project for chlebjs",
-  "main": "dist/index.html",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/plugin-transform-react-jsx": "^7.7.4",
-    "chleb": "^3.0.0",
-    "parcel-bundler": "^1.12.4"
-  },
+  "name": "chlebjs-netlify",
+  "version": "2.0.0",
+  "description": "",
+  "main": "src/index.html",
   "scripts": {
+    "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/polishchlieb/chlebjs-netlify.git"
+    "url": "git+https://github.com/chlebjs/chlebjs-example.git"
   },
   "keywords": [],
-  "author": "chlebek",
+  "author": "chleb",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/polishchlieb/chlebjs-netlify/issues"
+    "url": "https://github.com/chlebjs/chlebjs-example/issues"
   },
-  "homepage": "https://github.com/polishchlieb/chlebjs-netlify#readme"
+  "homepage": "https://github.com/chlebjs/chlebjs-example#readme",
+  "dependencies": {
+    "chleb": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.8.3"
+  }
 }
