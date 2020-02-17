@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/chlebjs/chlebjs-example#readme",
   "dependencies": {
-    "chleb": "^4.0.0"
+    "chleb": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

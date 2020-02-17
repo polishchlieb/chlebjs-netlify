@@ -11,7 +11,9 @@ export default class Counter extends Component {
 
     render() {
         return (
-            <h1>{String(state.counter)}</h1>
+            <div>
+                {state.visible && <h1>{String(state.counter)}</h1>}
+            </div>
         );
     }
 }

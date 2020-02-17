@@ -1,7 +1,8 @@
 import { Store } from 'chleb';
 
 const store = new Store({
-    counter: 0
+    counter: 0,
+    visible: true
 });
 
 export default [

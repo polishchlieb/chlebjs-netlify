@@ -12,7 +12,8 @@ export default class Button extends Component {
 
     increment() {
         setState({
-            counter: state.counter + 1
+            counter: state.counter + 1,
+            visible: state.counter < 10
         });
     }
 }
